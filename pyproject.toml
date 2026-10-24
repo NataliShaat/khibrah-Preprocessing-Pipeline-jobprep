@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobprep"
+version = "1.0.0"
+description = "Khibrah pre-processing pipeline for Arabic, English, French and mixed job postings"
+requires-python = ">=3.9"
+dependencies = ["pandas>=1.5", "numpy>=1.22", "openpyxl>=3.0"]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=10"]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["jobprep"]

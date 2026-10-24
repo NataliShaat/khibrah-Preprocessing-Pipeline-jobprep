@@ -1,0 +1,12 @@
+# data stays out of the repository (source posts contain account handles)
+*.csv
+*.xlsx
+*.parquet
+*.pkl
+processed/
+data/
+
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
